@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100dvw;
+}
+
+
+/* Navbar */
+
+.nav-bar {
+    width: 100dvw;
+    height: 4rem;
+    position: fixed;
+    z-index: 1000;
+    bottom: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navbar {
+    width: 30%;
+    height: 100%;
+    backdrop-filter: blur(18.75rem);
+    color: #fff;
+    display: flex;
+    mix-blend-mode: normal;
+    background-color: #00000080;
+    border: .0625rem solid #ffffff1a;
+    border-radius: .6rem;
+}
+
+.nav-items {
+    width: 100%;
+}
+
+.nav-items>ul {
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+.nav-items>ul>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navbar */
+
+
+/* home */
+
+.home {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+    background-attachment: fixed;
+    background-image: url(https://s3-eu-west-1.amazonaws.com/blog-ecotree/blog/0001/03/03701ab77ebafed29d375caabb00ea34f09e7154.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home h1 {
+    color: green;
+}
+
+.home-brown {
+    color: brown;
+}
+
+.text {
+    width: 47rem;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: monospace;
+    font-size: 3rem;
+    border-right: 3px solid;
+    animation: Typing 3s steps(40) infinite, cursor .8s step-end;
+}
+
+@keyframes Typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.page {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* GERMINATION */
+
+.germination {
+    background-color: brown;
+    font-family: monospace;
+}
+
+.germination h1 {
+    font-size: 3rem;
+    justify-self: flex-start;
+}
+
+.germination p {
+    font-size: 2rem;
+    font-weight: bold;
+    align-self: flex-start;
+    padding: 2rem;
+}
+
+.photo-grid {
+    width: 90%;
+    height: 30rem;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.photo-box {
+    width: 20rem;
+    aspect-ratio: 1;
+    /* background-color: blue; */
+}
+
+.photo-box:hover{
+    transform: scale(1.25);
+    transition: 0.25s;
+}
+
+#photo-box1 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnzMU8zLZ6InD01Cq_wNhW2IcMJ8D9cU2r-A&usqp=CAU);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#photo-box2 {
+    background-image: url(https://i.pinimg.com/originals/a4/35/23/a43523b94c546f6a8a06c1a24e66152c.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#photo-box3 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxbsEYMfvV5X_FjLV1jpjsua9YSm-MPNMrhg&usqp=CAU);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
